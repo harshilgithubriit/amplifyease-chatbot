@@ -1,0 +1,135 @@
+/* Floating Chat Button */
+#chatbot-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #4f46e5;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    font-size: 26px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Chat Window */
+#chatbot-window {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 320px;
+    height: 420px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+    display: none;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+#chatbot-header {
+    background: #4f46e5;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Messages Area */
+#chatbot-messages {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+/* Message Bubbles */
+.bot-message {
+    background: #f1f1f1;
+    padding: 8px 10px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    max-width: 80%;
+    animation: fadeIn 0.25s ease-in;
+}
+
+.user-message {
+    background: #4f46e5;
+    color: white;
+    padding: 8px 10px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    margin-left: auto;
+    max-width: 80%;
+    animation: fadeIn 0.25s ease-in;
+}
+
+/* Timestamp */
+.time {
+    display: block;
+    font-size: 10px;
+    color: #888;
+    margin-top: 4px;
+}
+
+/* Typing Indicator */
+.typing {
+    font-size: 18px;
+    letter-spacing: 3px;
+    color: #666;
+    padding: 6px;
+}
+
+/* Input Area */
+#chatbot-input-area {
+    display: flex;
+    border-top: 1px solid #ddd;
+}
+
+#chatbot-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+#send-btn {
+    background: #4f46e5;
+    color: white;
+    border: none;
+    padding: 0 16px;
+    cursor: pointer;
+}
+
+/* Quick Reply Buttons */
+.quick-replies button {
+    margin: 4px 4px 0 0;
+    padding: 6px 10px;
+    border-radius: 16px;
+    border: none;
+    background: #e0e7ff;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+/* Footer Branding */
+#chatbot-footer {
+    text-align: center;
+    font-size: 11px;
+    padding: 6px;
+    color: #888;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
